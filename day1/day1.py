@@ -7,14 +7,14 @@ measurement3 = 0
 lastSum = 0
 
 with open("day1_input", "r") as f:
-    '''
-    for i in f:
+    input = f
+    for i in input:
         if int(lastNumber) < int(i):
             totalCount1 += 1
         lastNumber = i
     print(totalCount1)
-    '''
 
+with open("day1_input", "r") as f:
     for i in f:
         measurementSum = int(measurement1) + int(measurement2) + int(measurement3)
         if int(measurementSum) > int(lastSum):
